@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bajaj Carrera Motos Medellín | Concesionario Oficial Bajaj en Medellín</title>
+  <meta name="description" content="Bajaj Carrera Motos Medellín - Concesionario oficial Bajaj en Medellín. Boxer, Pulsar, Discover, Dominar y Torito en Laureles - Estadio con financiación inmediata y repuestos originales." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://grupouma.com/colombia/wp-content/uploads/sites/2/2021/07/favicon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            uma: {
+              blue: '#002e6e',
+              'blue-dark': '#001a40',
+              'blue-light': '#0c71c3',
+              red: '#e30613',
+              'red-hover': '#b8000b',
+              gray: '#f8f9fb',
+              dark: '#111827',
+            }
+          },
+          fontFamily: {
+            sans: ['Open Sans', 'sans-serif'],
+            heading: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-white text-gray-700 antialiased selection:bg-uma-red selection:text-white">
+  <!-- Preloader Splash Screen -->
+  <div id="splash-screen" class="fixed inset-0 z-[9999] bg-black flex items-center justify-center overflow-hidden transition-opacity duration-700">
+    
+    <!-- Video de Fondo -->
+    <video id="splash-video" class="absolute inset-0 w-full h-full object-cover" autoplay muted playsinline>
+      <source src="assets/video/bajaj anuncio.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+    
+    <!-- Capa Oscura (Overlay) -->
+    <div class="absolute inset-0 bg-black/60 z-10"></div>
+    
+    <!-- Botón Saltar Superior -->
+    <button onclick="document.getElementById('skip-splash').click()" class="absolute top-6 right-6 z-20 text-white/80 hover:text-white font-semibold text-xs sm:text-sm tracking-wide transition-colors flex items-center gap-2 cursor-pointer">
+      Saltar Introducción <i class="fa-solid fa-angles-right"></i>
+    </button>
+
+    <!-- Contenido Central -->
+    <div class="relative z-20 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto mt-8">
+      
+      <!-- Logo Bajaj -->
+      <div class="bg-black/60 backdrop-blur-md border border-white/10 rounded-3xl p-3 mb-6 shadow-2xl inline-flex justify-center items-center">
+        <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/LOGO-GrupoUMA_2.webp" alt="Grupo UMA / Bajaj" class="h-8 sm:h-10 w-auto object-contain filter brightness-200" />
+      </div>
+
+      <!-- Título Principal -->
+      <h1 class="font-heading text-4xl sm:text-5xl md:text-7xl font-black text-white uppercase tracking-tight leading-none drop-shadow-2xl mb-4">
+        Revoluciona tu <span class="text-uma-red">Pasión</span> en<br /> Medellín
+      </h1>
+
+      <!-- Párrafo Subtítulo -->
+      <p class="text-white/90 text-sm sm:text-base md:text-lg max-w-2xl font-light drop-shadow-md mb-8">
+        Bienvenido al concesionario oficial Bajaj Carrera Motos en Medellín. Innovación, potencia, repuestos originales y servicio técnico garantizado.
+      </p>
+
+      <!-- Botones de Acción -->
+      <div class="flex flex-col sm:flex-row items-center gap-4">
+        <button id="skip-splash" class="px-8 py-3.5 bg-[#FFD700] hover:bg-[#F2C900] text-gray-900 rounded-md font-heading text-sm font-bold uppercase tracking-wider transition-all shadow-lg flex items-center gap-2 cursor-pointer">
+          INGRESAR AL SITIO WEB <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button onclick="const v=document.getElementById('splash-video'); v.muted=!v.muted; this.innerHTML = v.muted ? '<i class=\'fa-solid fa-volume-xmark\'></i> Activar Sonido' : '<i class=\'fa-solid fa-volume-high\'></i> Desactivar Sonido';" class="px-6 py-3.5 bg-black/40 hover:bg-black/60 border border-white/30 backdrop-blur-md text-white rounded-md text-sm font-bold transition-all flex items-center gap-2 shadow-lg cursor-pointer">
+          <i class="fa-solid fa-volume-xmark"></i> Activar Sonido
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       TOP BAR (Selector de País, Enlaces Rápidos, Redes Sociales)
+       ======================================================================== -->
+  <div class="bg-uma-blue-dark text-white text-xs border-b border-blue-950/40 relative z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2">
+      <!-- Izquierda: Selector de país y accesos -->
+      <div class="flex items-center gap-4 flex-wrap">
+        <!-- Selector de País -->
+        <div class="relative">
+          <button id="country-selector-btn" class="flex items-center gap-1.5 hover:text-red-400 transition-colors font-medium">
+            <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/colombia-flag.webp" alt="Colombia" class="w-4 h-3 object-cover rounded-sm" />
+            <span>Colombia</span>
+            <i class="fa-solid fa-chevron-down text-[10px] ml-0.5"></i>
+          </button>
+
+          <!-- Menú países -->
+          <div id="country-dropdown-menu" class="hidden absolute top-full left-0 mt-2 w-44 bg-white text-gray-800 rounded-lg shadow-xl border border-gray-100 py-2 z-50 animate-fadeIn">
+            <a href="#" class="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 font-medium text-uma-blue">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/colombia-flag.webp" class="w-4 h-3" alt="Colombia"> Colombia
+            </a>
+            <a href="#" class="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 text-gray-600">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/guatemala-flag.webp" class="w-4 h-3" alt="Guatemala"> Guatemala
+            </a>
+            <a href="#" class="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 text-gray-600">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/elsalvador-flag.webp" class="w-4 h-3" alt="El Salvador"> El Salvador
+            </a>
+            <a href="#" class="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 text-gray-600">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/honduras-flag.webp" class="w-4 h-3" alt="Honduras"> Honduras
+            </a>
+            <a href="#" class="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 text-gray-600">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/nicaragua-flag.webp" class="w-4 h-3" alt="Nicaragua"> Nicaragua
+            </a>
+            <a href="#" class="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 text-gray-600">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/costarica-flag.webp" class="w-4 h-3" alt="Costa Rica"> Costa Rica
+            </a>
+            <a href="#" class="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 text-gray-600">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/venezuela-flag.webp" class="w-4 h-3" alt="Venezuela"> Venezuela
+            </a>
+          </div>
+        </div>
+
+        <span class="text-blue-400/40">|</span>
+
+        <a href="#credito-section" class="hover:text-red-400 transition-colors">Financia tu Moto</a>
+        <a href="#promociones-section" class="hover:text-red-400 transition-colors">Promos</a>
+        <a href="#servicios-section" class="hover:text-red-400 transition-colors">Postventa</a>
+        <a href="#distribuidores-section" class="hover:text-red-400 transition-colors">Distribuidores B2B</a>
+      </div>
+
+      <!-- Derecha: Dirección, Correo, WhatsApp y redes sociales -->
+      <div class="flex items-center gap-4 flex-wrap">
+        <div class="hidden xl:flex items-center gap-1.5 text-blue-200 text-xs">
+          <i class="fa-solid fa-location-dot text-uma-red"></i>
+          <span>C. 50 #67 58, Laureles - Estadio, Medellín, Antioquia</span>
+        </div>
+        <span class="hidden xl:inline text-blue-400/40">|</span>
+        <a href="mailto:mercadeocarreramotoslaureles@gmail.com" class="hidden md:flex items-center gap-1.5 font-medium text-gray-200 hover:text-white">
+          <i class="fa-solid fa-envelope text-uma-red"></i>
+          <span>mercadeocarreramotoslaureles@gmail.com</span>
+        </a>
+        <span class="hidden md:inline text-blue-400/40">|</span>
+        <a href="https://wa.me/573246600562?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20las%20motos%20en%20Bajaj%20Carrera%20Motos%20Medell%C3%ADn" target="_blank" class="flex items-center gap-1.5 font-semibold text-gray-200 hover:text-white">
+          <i class="fa-brands fa-whatsapp text-green-400 text-sm"></i>
+          <span>+57 324 660 0562</span>
+        </a>
+        <div class="flex items-center gap-3 pl-2 border-l border-blue-900/60">
+          <a href="https://facebook.com" target="_blank" class="hover:text-red-400 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank" class="hover:text-red-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" class="hover:text-red-400 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://tiktok.com" target="_blank" class="hover:text-red-400 transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       HEADER PRINCIPAL & MEGA MENÚ
+       ======================================================================== -->
+  <header class="sticky top-0 bg-white/95 backdrop-blur-md shadow-md z-40 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo Bajaj Carrera Motos Medellín -->
+        <a href="#" class="flex-shrink-0 flex items-center gap-3 group">
+          <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/LOGO-GrupoUMA_2.webp" alt="Bajaj Carrera Motos Medellín" class="h-9 sm:h-11 w-auto object-contain" />
+          <div class="border-l-2 border-gray-300 pl-3">
+            <span class="block font-heading font-black text-sm sm:text-base text-uma-blue tracking-tight leading-tight group-hover:text-uma-red transition-colors">CARRERA MOTOS</span>
+            <span class="block text-[10px] sm:text-xs font-bold text-uma-red tracking-wider uppercase leading-none">Medellín • Bajaj</span>
+          </div>
+        </a>
+
+        <!-- Menú de Navegación de Escritorio -->
+        <nav class="hidden lg:flex items-center gap-7">
+          <!-- Item: Motos con Mega Menú -->
+          <div class="group relative py-6">
+            <a href="#catalogo-motos" class="nav-link font-heading text-sm font-bold text-gray-800 hover:text-uma-blue flex items-center gap-1.5">
+              <span>MOTOS</span>
+              <i class="fa-solid fa-chevron-down text-[11px] text-gray-400 group-hover:text-uma-blue group-hover:rotate-180 transition-transform"></i>
+            </a>
+
+            <!-- Mega Menú Desplegable -->
+            <div class="mega-menu absolute top-full -left-20 w-[840px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 z-50">
+              <div class="grid grid-cols-4 gap-4">
+                <!-- Boxer -->
+                <div class="p-3 rounded-xl hover:bg-gray-50 transition-colors border border-transparent hover:border-gray-200">
+                  <div class="h-28 flex items-center justify-center mb-2 overflow-hidden">
+                    <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2024/11/grupo-uma-miniatura-boxer-ks-new.webp" alt="Boxer" class="max-h-full w-auto object-contain hover:scale-110 transition-transform" />
+                  </div>
+                  <h4 class="font-heading font-bold text-gray-900 text-sm mb-0.5">Motos Boxer</h4>
+                  <p class="text-xs text-uma-red font-bold mb-2">Desde $5.899.000</p>
+                  <a href="#catalogo-motos" data-filter-trigger="boxer" class="text-xs font-semibold text-uma-blue hover:text-uma-red flex items-center gap-1">
+                    Ver versiones <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+
+                <!-- Pulsar -->
+                <div class="p-3 rounded-xl hover:bg-gray-50 transition-colors border border-transparent hover:border-gray-200">
+                  <div class="h-28 flex items-center justify-center mb-2 overflow-hidden">
+                    <img src="assets/images/Pulsar N125.jpg" alt="Pulsar" class="max-h-full w-auto object-contain hover:scale-110 transition-transform" />
+                  </div>
+                  <h4 class="font-heading font-bold text-gray-900 text-sm mb-0.5">Motos Pulsar</h4>
+                  <p class="text-xs text-uma-red font-bold mb-2">Desde $7.599.000</p>
+                  <a href="#catalogo-motos" data-filter-trigger="pulsar" class="text-xs font-semibold text-uma-blue hover:text-uma-red flex items-center gap-1">
+                    Ver versiones <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+
+                <!-- Discover -->
+                <div class="p-3 rounded-xl hover:bg-gray-50 transition-colors border border-transparent hover:border-gray-200">
+                  <div class="h-28 flex items-center justify-center mb-2 overflow-hidden">
+                    <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2024/11/grupo-uma-miniatura-discover-125.webp" alt="Discover" class="max-h-full w-auto object-contain hover:scale-110 transition-transform" />
+                  </div>
+                  <h4 class="font-heading font-bold text-gray-900 text-sm mb-0.5">Motos Discover</h4>
+                  <p class="text-xs text-uma-red font-bold mb-2">Desde $6.999.000</p>
+                  <a href="#catalogo-motos" data-filter-trigger="discover" class="text-xs font-semibold text-uma-blue hover:text-uma-red flex items-center gap-1">
+                    Ver versiones <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+
+                <!-- Dominar -->
+                <div class="p-3 rounded-xl hover:bg-gray-50 transition-colors border border-transparent hover:border-gray-200">
+                  <div class="h-28 flex items-center justify-center mb-2 overflow-hidden">
+                    <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2024/11/grupo-uma-miniatura-dominar-250-new.webp" alt="Dominar" class="max-h-full w-auto object-contain hover:scale-110 transition-transform" />
+                  </div>
+                  <h4 class="font-heading font-bold text-gray-900 text-sm mb-0.5">Motos Dominar</h4>
+                  <p class="text-xs text-uma-red font-bold mb-2">Desde $15.799.000</p>
+                  <a href="#catalogo-motos" data-filter-trigger="dominar" class="text-xs font-semibold text-uma-blue hover:text-uma-red flex items-center gap-1">
+                    Ver versiones <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Promo Footer del Mega Menú -->
+              <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between bg-blue-50/60 -mx-6 -mb-6 p-4 rounded-b-2xl">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-full bg-uma-blue text-white flex items-center justify-center text-sm"><i class="fa-solid fa-motorcycle"></i></span>
+                  <div>
+                    <p class="text-xs font-bold text-gray-900">¿No sabes qué moto elegir?</p>
+                    <p class="text-[11px] text-gray-500">Haz el test interactivo y descubre tu moto ideal en 1 minuto.</p>
+                  </div>
+                </div>
+                <button class="open-quiz-btn px-3 py-1.5 bg-uma-blue hover:bg-uma-blue-dark text-white rounded-lg text-xs font-bold transition-all shadow-sm">
+                  Iniciar Test
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item: Motocarros -->
+          <div class="group relative py-6">
+            <a href="#catalogo-motos" data-filter-trigger="motocarros" class="nav-link font-heading text-sm font-bold text-gray-800 hover:text-uma-blue flex items-center gap-1.5">
+              <span>MOTOCARROS</span>
+              <i class="fa-solid fa-chevron-down text-[11px] text-gray-400 group-hover:text-uma-blue group-hover:rotate-180 transition-transform"></i>
+            </a>
+
+            <!-- Dropdown Motocarros -->
+            <div class="mega-menu absolute top-full left-0 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 p-4 z-50">
+              <div class="flex flex-col gap-3">
+                <a href="#catalogo-motos" data-filter-trigger="motocarros" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors">
+                  <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2022/09/grupo-uma-miniatura-torito-2025.webp" alt="Torito" class="w-16 h-12 object-contain" />
+                  <div>
+                    <h5 class="font-heading font-bold text-xs text-gray-900">Torito 4T</h5>
+                    <p class="text-[11px] text-uma-red font-semibold">Desde $17.999.000</p>
+                  </div>
+                </a>
+                <a href="#catalogo-motos" data-filter-trigger="motocarros" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors">
+                  <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2022/09/grupo-uma-miniatura-maxima-cargo.webp" alt="Maxima Cargo" class="w-16 h-12 object-contain" />
+                  <div>
+                    <h5 class="font-heading font-bold text-xs text-gray-900">Maxima Cargo</h5>
+                    <p class="text-[11px] text-uma-red font-semibold">Desde $22.999.000</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#credito-section" class="nav-link font-heading text-sm font-bold text-gray-800 hover:text-uma-blue">CRÉDITO</a>
+          <a href="#promociones-section" class="nav-link font-heading text-sm font-bold text-gray-800 hover:text-uma-blue">PROMOS</a>
+          <a href="#servicios-section" class="nav-link font-heading text-sm font-bold text-gray-800 hover:text-uma-blue">POSTVENTA</a>
+          <a href="#noticias-section" class="nav-link font-heading text-sm font-bold text-gray-800 hover:text-uma-blue">BLOG</a>
+        </nav>
+
+        <!-- CTA Cotizar & Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <button class="open-quote-btn hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white rounded-full font-heading text-xs font-bold uppercase tracking-wider transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Cotiza aquí</span>
+          </button>
+
+          <button id="mobile-menu-toggle" class="lg:hidden p-2.5 rounded-lg bg-gray-100 text-gray-700 hover:text-uma-blue focus:outline-none" aria-label="Abrir Menú">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MOBILE DRAWER NAVIGATION
+       ======================================================================== -->
+  <div id="drawer-backdrop" class="fixed inset-0 bg-black/60 z-50 hidden transition-opacity"></div>
+  <div id="mobile-drawer" class="fixed inset-y-0 right-0 max-w-xs w-full bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div class="p-5 border-b border-gray-100 flex items-center justify-between bg-uma-blue text-white">
+      <div class="flex items-center gap-2.5">
+        <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/LOGO-GrupoUMA_2.webp" alt="Bajaj Carrera Motos Medellín" class="h-8 brightness-0 invert" />
+        <div class="border-l border-blue-300/40 pl-2 text-white">
+          <span class="block font-heading font-extrabold text-xs leading-none">CARRERA MOTOS</span>
+          <span class="block text-[9px] text-red-300 font-bold tracking-wider">MEDELLÍN</span>
+        </div>
+      </div>
+      <button id="close-drawer-btn" class="p-2 text-white hover:text-gray-200 text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="p-5 overflow-y-auto flex-1 space-y-4 font-heading text-sm font-semibold">
+      <div class="space-y-2">
+        <div class="p-3 bg-blue-50 border border-blue-100 rounded-xl text-uma-blue text-xs flex items-start gap-2 font-medium">
+          <i class="fa-solid fa-location-dot text-uma-red mt-0.5"></i>
+          <span>C. 50 #67 58, Laureles - Estadio, Medellín, Antioquia</span>
+        </div>
+        <a href="https://wa.me/573246600562?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20las%20motos%20en%20Bajaj%20Carrera%20Motos%20Medell%C3%ADn" target="_blank" class="p-3 bg-green-50 border border-green-200 rounded-xl text-green-700 text-xs font-bold flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-green-500 text-base"></i>
+          <span>WhatsApp: +57 324 660 0562</span>
+        </a>
+        <a href="mailto:mercadeocarreramotoslaureles@gmail.com" class="p-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-700 text-xs font-medium flex items-center gap-2 truncate">
+          <i class="fa-solid fa-envelope text-uma-red"></i>
+          <span class="truncate">mercadeocarreramotoslaureles@gmail.com</span>
+        </a>
+      </div>
+      <a href="#catalogo-motos" class="mobile-link block py-2 border-b border-gray-100 text-gray-800 hover:text-uma-blue">Motos Bajaj</a>
+      <a href="#catalogo-motos" data-filter-trigger="motocarros" class="mobile-link block py-2 border-b border-gray-100 text-gray-800 hover:text-uma-blue">Motocarros</a>
+      <a href="#credito-section" class="mobile-link block py-2 border-b border-gray-100 text-gray-800 hover:text-uma-blue">Financia tu Moto</a>
+      <a href="#promociones-section" class="mobile-link block py-2 border-b border-gray-100 text-gray-800 hover:text-uma-blue">Promociones</a>
+      <a href="#servicios-section" class="mobile-link block py-2 border-b border-gray-100 text-gray-800 hover:text-uma-blue">Servicios & Repuestos</a>
+      <a href="#noticias-section" class="mobile-link block py-2 border-b border-gray-100 text-gray-800 hover:text-uma-blue">Noticias & Novedades</a>
+      
+      <div class="pt-4 space-y-3">
+        <button class="open-quote-btn w-full py-3 bg-uma-red text-white text-center rounded-xl font-bold uppercase tracking-wider text-xs">
+          Cotiza tu moto ahora
+        </button>
+        <button class="open-quiz-btn w-full py-3 bg-uma-blue text-white text-center rounded-xl font-bold uppercase tracking-wider text-xs">
+          Test Moto Ideal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       HERO CAROUSEL / SLIDER (Swiper)
+       ======================================================================== -->
+  <section class="relative bg-gray-900 overflow-hidden">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        
+        <!-- Slide 1: Pulsar NS400Z -->
+        <div class="swiper-slide relative bg-black min-h-[480px] lg:min-h-[580px] flex items-center">
+          <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2026/03/grupo-uma-banner-blog-pulsar-ns400-1024x683.webp" alt="Pulsar NS400Z" class="absolute inset-0 w-full h-full object-cover object-center opacity-60" />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
+          
+          <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+            <div class="max-w-2xl text-white">
+              <span class="inline-block px-3.5 py-1 bg-uma-red text-white text-xs font-bold uppercase tracking-widest rounded-md mb-4 animate-pulse">
+                Nuevo Lanzamiento 2026
+              </span>
+              <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">
+                Pulsar <span class="text-uma-red">NS400Z</span>
+              </h1>
+              <p class="text-lg sm:text-xl text-gray-200 mb-6 font-light">
+                Potencia descomunal con 40 HP, modos de manejo, control de tracción y conectividad digital avanzada.
+              </p>
+              <div class="flex items-center gap-3 mb-8">
+                <span class="text-sm uppercase tracking-wider text-gray-300 font-semibold">Precio de lanzamiento:</span>
+                <span class="text-2xl sm:text-3xl font-heading font-extrabold text-white bg-uma-blue/80 px-4 py-1.5 rounded-lg border border-blue-400/30">
+                  $18.299.000
+                </span>
+              </div>
+              <div class="flex flex-wrap items-center gap-4">
+                <button onclick="openQuoteWithModel('Pulsar NS400Z')" class="px-7 py-3.5 bg-uma-red hover:bg-uma-red-hover text-white rounded-full font-heading text-sm font-bold uppercase tracking-wider transition-all shadow-lg hover:shadow-red-500/30">
+                  Cotizar Ahora
+                </button>
+                <a href="#catalogo-motos" data-filter-trigger="pulsar" class="px-7 py-3.5 bg-white/20 hover:bg-white/30 backdrop-blur-md text-white rounded-full font-heading text-sm font-bold uppercase tracking-wider transition-all border border-white/30">
+                  Ver Ficha Técnica
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Lubricantes y Aceites Bajaj 10W40 -->
+        <div class="swiper-slide relative bg-gray-900 min-h-[480px] lg:min-h-[580px] flex items-center">
+          <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2026/04/grupo-uma-aceite-10w40-banner-noticias.jpg" alt="Aceites Bajaj 10W40" class="absolute inset-0 w-full h-full object-contain object-right opacity-90" />
+          <div class="absolute inset-0 bg-gradient-to-r from-uma-blue-dark/95 via-uma-blue-dark/70 to-transparent"></div>
+
+          <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+            <div class="max-w-2xl text-white">
+              <span class="inline-block px-3.5 py-1 bg-blue-500 text-white text-xs font-bold uppercase tracking-widest rounded-md mb-4">
+                Repuestos & Lubricantes Genuinos
+              </span>
+              <h2 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">
+                Aceites Genuinos <span class="text-yellow-400">Bajaj 10W40</span>
+              </h2>
+              <p class="text-lg sm:text-xl text-gray-200 mb-6 font-light">
+                Formulado especialmente para la tecnología DTS-i. Máximo rendimiento, menor desgaste y protección garantizada.
+              </p>
+              <div class="flex flex-wrap items-center gap-4">
+                <a href="#servicios-section" class="px-7 py-3.5 bg-uma-red hover:bg-uma-red-hover text-white rounded-full font-heading text-sm font-bold uppercase tracking-wider transition-all shadow-lg">
+                  Conoce Más
+                </a>
+                <button onclick="openQuoteWithModel('')" class="px-7 py-3.5 bg-white/20 hover:bg-white/30 backdrop-blur-md text-white rounded-full font-heading text-sm font-bold uppercase tracking-wider transition-all border border-white/30">
+                  Cotizar Repuestos
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Línea Boxer -->
+        <div class="swiper-slide relative bg-gray-950 min-h-[480px] lg:min-h-[580px] flex items-center">
+          <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/01/grupouma-banner-novedades-boxer-new.webp" alt="Motos Boxer" class="absolute inset-0 w-full h-full object-cover object-center opacity-60" />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
+
+          <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+            <div class="max-w-2xl text-white">
+              <span class="inline-block px-3.5 py-1 bg-uma-red text-white text-xs font-bold uppercase tracking-widest rounded-md mb-4">
+                La #1 de Colombia
+              </span>
+              <h2 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">
+                Familia <span class="text-uma-red">Boxer</span>
+              </h2>
+              <p class="text-lg sm:text-xl text-gray-200 mb-6 font-light">
+                La compañera incansable de trabajo y ahorro. Calidad comprobada, repuestos económicos y durabilidad legendaria.
+              </p>
+              <div class="flex items-center gap-3 mb-8">
+                <span class="text-sm uppercase tracking-wider text-gray-300 font-semibold">Precios desde:</span>
+                <span class="text-2xl sm:text-3xl font-heading font-extrabold text-white bg-uma-blue/80 px-4 py-1.5 rounded-lg border border-blue-400/30">
+                  $5.899.000
+                </span>
+              </div>
+              <div class="flex flex-wrap items-center gap-4">
+                <a href="#catalogo-motos" data-filter-trigger="boxer" class="px-7 py-3.5 bg-uma-red hover:bg-uma-red-hover text-white rounded-full font-heading text-sm font-bold uppercase tracking-wider transition-all shadow-lg">
+                  Ver Modelos Boxer
+                </a>
+                <button onclick="openQuoteWithModel('Boxer CT100 KS')" class="px-7 py-3.5 bg-white/20 hover:bg-white/30 backdrop-blur-md text-white rounded-full font-heading text-sm font-bold uppercase tracking-wider transition-all border border-white/30">
+                  Financiar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controles de navegación del carrusel -->
+      <div class="swiper-pagination !bottom-6"></div>
+      <div class="hero-prev hero-nav-btn absolute left-4 top-1/2 -translate-y-1/2 hidden md:flex">
+        <i class="fa-solid fa-chevron-left text-lg"></i>
+      </div>
+      <div class="hero-next hero-nav-btn absolute right-4 top-1/2 -translate-y-1/2 hidden md:flex">
+        <i class="fa-solid fa-chevron-right text-lg"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TARJETAS DE ACCESO RÁPIDO (Catálogo, Crédito, Promos)
+       ======================================================================== -->
+  <section class="relative -mt-8 z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Tarjeta 1: Catálogo Digital -->
+      <a href="#catalogo-motos" class="feature-card bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-5 group">
+        <div class="w-16 h-16 rounded-2xl bg-blue-50 text-uma-blue flex items-center justify-center text-2xl group-hover:bg-uma-blue group-hover:text-white transition-colors flex-shrink-0">
+          <i class="fa-solid fa-motorcycle"></i>
+        </div>
+        <div>
+          <h3 class="font-heading text-lg font-bold text-gray-900 group-hover:text-uma-blue transition-colors">Catálogo Digital</h3>
+          <p class="text-xs text-gray-500 mt-1">Conoce todos los modelos Boxer, Pulsar, Discover y Dominar.</p>
+        </div>
+      </a>
+
+      <!-- Tarjeta 2: Financia tu Moto -->
+      <a href="#credito-section" class="feature-card bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-5 group">
+        <div class="w-16 h-16 rounded-2xl bg-red-50 text-uma-red flex items-center justify-center text-2xl group-hover:bg-uma-red group-hover:text-white transition-colors flex-shrink-0">
+          <i class="fa-solid fa-credit-card"></i>
+        </div>
+        <div>
+          <h3 class="font-heading text-lg font-bold text-gray-900 group-hover:text-uma-red transition-colors">Financia tu Moto</h3>
+          <p class="text-xs text-gray-500 mt-1">Aprobación inmediata, cuotas flexibles y tasas preferenciales para ti.</p>
+        </div>
+      </a>
+
+      <!-- Tarjeta 3: Promociones -->
+      <a href="#promociones-section" class="feature-card bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-5 group">
+        <div class="w-16 h-16 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl group-hover:bg-amber-500 group-hover:text-white transition-colors flex-shrink-0">
+          <i class="fa-solid fa-tags"></i>
+        </div>
+        <div>
+          <h3 class="font-heading text-lg font-bold text-gray-900 group-hover:text-amber-600 transition-colors">Súper Ofertones</h3>
+          <p class="text-xs text-gray-500 mt-1">Bonos de descuento, matrículas subsidiadas y combos de mantenimiento.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PORTAFOLIO DE MARCAS (Bajaj & Triumph)
+       ======================================================================== -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-heading font-bold uppercase tracking-widest text-uma-red">Marcas Representadas</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Portafolio Grupo UMA</h2>
+        <div class="w-16 h-1 bg-uma-blue mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Marca: BAJAJ -->
+        <div class="brand-box bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2023/07/Imagen-marcas-bajaj-home-grupo-uma-v2.jpg" alt="Motos Bajaj" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <span class="px-3 py-1 bg-uma-blue text-xs font-bold uppercase rounded-md mb-2 inline-block">Distribuidor Oficial</span>
+              <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-white">MOTOS BAJAJ</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-sm text-gray-600 mb-6">
+              La marca preferida en Colombia. Modelos icónicos como Pulsar, Dominar, Boxer, Discover y Torito diseñados para liderar en rendimiento y confiabilidad.
+            </p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <a href="#catalogo-motos" class="font-heading text-xs font-bold uppercase tracking-wider text-uma-blue hover:text-uma-red flex items-center gap-2">
+                Explorar Modelos <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <span class="text-xs text-gray-400 font-semibold">21 Versiones disponibles</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marca: TRIUMPH -->
+        <div class="brand-box bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2023/07/Imagen-marcas-triumph-home-grupo-uma-v3.jpg" alt="Motos Triumph" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <span class="px-3 py-1 bg-red-600 text-xs font-bold uppercase rounded-md mb-2 inline-block">Alta Gama Británica</span>
+              <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-white">MOTOS TRIUMPH</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-sm text-gray-600 mb-6">
+              Pasión por la ingeniería y el Diseño legendario británico. Motocicletas premium para los amantes de la aventura, el estilo clásico y el alto cilindraje.
+            </p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <a href="https://triumphcolombia.com" target="_blank" class="font-heading text-xs font-bold uppercase tracking-wider text-uma-blue hover:text-uma-red flex items-center gap-2">
+                Visitar Triumph Colombia <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <span class="text-xs text-gray-400 font-semibold">Gama Premium</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CATÁLOGO DE MODELOS CON FILTROS DINÁMICOS
+       ======================================================================== -->
+  <section id="catalogo-motos" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+        <div>
+          <span class="text-xs font-heading font-bold uppercase tracking-widest text-uma-red">Catálogo 2026</span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Encuentra tu moto ideal</h2>
+          <p class="text-gray-500 text-sm mt-1">Explora todas las Líneas de motocicletas y vehículos de carga disponibles en Colombia.</p>
+        </div>
+
+        <!-- Pestañas de Filtrado -->
+        <div class="flex flex-wrap gap-2">
+          <button class="cat-tab active px-5 py-2.5 rounded-full text-xs font-heading font-bold border border-gray-200 bg-gray-100 text-gray-700" data-category="all">
+            Todas
+          </button>
+          <button class="cat-tab px-5 py-2.5 rounded-full text-xs font-heading font-bold border border-gray-200 bg-gray-100 text-gray-700" data-category="boxer">
+            Boxer
+          </button>
+          <button class="cat-tab px-5 py-2.5 rounded-full text-xs font-heading font-bold border border-gray-200 bg-gray-100 text-gray-700" data-category="pulsar">
+            Pulsar
+          </button>
+          <button class="cat-tab px-5 py-2.5 rounded-full text-xs font-heading font-bold border border-gray-200 bg-gray-100 text-gray-700" data-category="discover">
+            Discover
+          </button>
+          <button class="cat-tab px-5 py-2.5 rounded-full text-xs font-heading font-bold border border-gray-200 bg-gray-100 text-gray-700" data-category="dominar">
+            Dominar
+          </button>
+          <button class="cat-tab px-5 py-2.5 rounded-full text-xs font-heading font-bold border border-gray-200 bg-gray-100 text-gray-700" data-category="motocarros">
+            Motocarros
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid de Tarjetas de Motos -->
+      <div id="bike-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <!-- 1. Boxer CT100 KS -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="boxer">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-blue-50 text-uma-blue">Boxer</span>
+              <span class="text-xs font-semibold text-gray-400">102 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2024/11/grupo-uma-miniatura-boxer-ks-new.webp" alt="Boxer CT100 KS" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Boxer CT100 KS</h3>
+            <p class="text-xs text-gray-500 mb-3">Arranque de patada, ultra económica y resistente.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$5.899.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Boxer CT100 KS')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Boxer CT100 KS Racing -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="boxer">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-blue-50 text-uma-blue">Boxer</span>
+              <span class="text-xs font-semibold text-gray-400">102 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2026/02/grupo-uma-miniatura-boxer-ks-boxer-rancing-mini.webp" alt="Boxer CT100 KS Racing" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Boxer CT100 KS Racing</h3>
+            <p class="text-xs text-gray-500 mb-3">Edición especial con calcomanías racing.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$5.999.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Boxer CT100 KS Racing')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Boxer CT100 ES -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="boxer">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-blue-50 text-uma-blue">Boxer</span>
+              <span class="text-xs font-semibold text-gray-400">102 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2024/11/grupo-uma-miniatura-boxer-es-new.webp" alt="Boxer CT100 ES" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Boxer CT100 ES</h3>
+            <p class="text-xs text-gray-500 mb-3">Encendido eléctrico y de patada integrado.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$6.199.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Boxer CT100 ES')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Boxer CT125 Sport -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="boxer">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-blue-50 text-uma-blue">Boxer</span>
+              <span class="text-xs font-semibold text-gray-400">124.4 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/03/grupo-uma-mm-boxer-ct-125.webp" alt="Boxer CT125 Sport" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Boxer CT125 Sport</h3>
+            <p class="text-xs text-gray-500 mb-3">Mayor fuerza y torque para cargas pesadas.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$6.899.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Boxer CT125 Sport')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. Boxer 150X -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="boxer">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-blue-50 text-uma-blue">Boxer</span>
+              <span class="text-xs font-semibold text-gray-400">144.8 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2024/11/grupouma-boxer-150x-azul-petroleo-menu.webp" alt="Boxer 150X" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Boxer 150X</h3>
+            <p class="text-xs text-gray-500 mb-3">Doble propósito con parrilla de fábrica y llantas todo terreno.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$7.499.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Boxer 150X')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 6. Pulsar N125 -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="pulsar">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-red-50 text-uma-red">Pulsar</span>
+              <span class="text-xs font-semibold text-gray-400">124.5 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="assets/images/Pulsar N125.jpg" alt="Pulsar N125" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Pulsar N125</h3>
+            <p class="text-xs text-gray-500 mb-3">Diseño Street Naked moderno y peso ultra ligero.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$7.599.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Pulsar N125')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 7. Pulsar NS125 FI -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="pulsar">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-red-50 text-uma-red">Pulsar</span>
+              <span class="text-xs font-semibold text-gray-400">124.4 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="assets/images/Pulsar NS125 FI.png" alt="Pulsar NS125 FI" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Pulsar NS125 FI</h3>
+            <p class="text-xs text-gray-500 mb-3">Inyección electrónica y frenos CBS combinados.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$8.099.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Pulsar NS125 FI')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 8. Pulsar N160 Pro -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="pulsar">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-red-50 text-uma-red">Pulsar</span>
+              <span class="text-xs font-semibold text-gray-400">164.8 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="assets/images/Pulsar N160 Pro.png" alt="Pulsar N160 Pro" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Pulsar N160 Pro</h3>
+            <p class="text-xs text-gray-500 mb-3">ABS Doble Canal, farola bi-LED y panel LCD completo.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$10.999.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Pulsar N160 Pro')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 9. Pulsar NS200 FI ABS -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="pulsar">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-red-50 text-uma-red">Pulsar</span>
+              <span class="text-xs font-semibold text-gray-400">199.5 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/03/grupo-uma-pulsar-ns-200-fi-miniatura-mm.webp" alt="Pulsar NS200 FI ABS" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Pulsar NS200 FI ABS</h3>
+            <p class="text-xs text-gray-500 mb-3">Suspensión USD invertida, 24.1 HP y ABS doble canal.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$15.799.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Pulsar NS200 FI ABS')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 10. Pulsar NS400Z -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between border-2 border-uma-red/40" data-category="pulsar">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-uma-red text-white">Lanzamiento</span>
+              <span class="text-xs font-semibold text-gray-400">373.3 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2024/10/grupouma-pulsar-ns-400z-mini.webp" alt="Pulsar NS400Z" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Pulsar NS400Z</h3>
+            <p class="text-xs text-gray-500 mb-3">40 HP, Ride-by-Wire, 4 modos de manejo y control de tracción.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-red">$18.299.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Pulsar NS400Z')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 11. Discover 125 SPORT -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="discover">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-cyan-50 text-cyan-800">Discover</span>
+              <span class="text-xs font-semibold text-gray-400">124.5 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2024/11/grupo-uma-miniatura-discover-125.webp" alt="Discover 125 SPORT" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Discover 125 SPORT</h3>
+            <p class="text-xs text-gray-500 mb-3">Caja de 5 velocidades, freno de disco delantero y gran confort.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$6.999.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Discover 125 SPORT')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 12. Dominar 250 -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="dominar">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-indigo-50 text-indigo-800">Dominar</span>
+              <span class="text-xs font-semibold text-gray-400">248.8 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2024/11/grupo-uma-miniatura-dominar-250-new.webp" alt="Dominar 250" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Dominar 250</h3>
+            <p class="text-xs text-gray-500 mb-3">26.6 HP, embrague antirrebote y suspensión delantera invertida.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$15.799.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Dominar 250')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 13. Dominar 400 Touring -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="dominar">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-indigo-50 text-indigo-800">Dominar</span>
+              <span class="text-xs font-semibold text-gray-400">373.3 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="assets/images/Dominar 400 Touring.png" alt="Dominar 400 Touring" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Dominar 400 Touring</h3>
+            <p class="text-xs text-gray-500 mb-3">Equipada de fábrica para viajes: cúpula, defensas y puerto USB.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$19.399.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Dominar 400 Touring')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 14. Torito 4T -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="motocarros">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-amber-50 text-amber-800">Motocarro</span>
+              <span class="text-xs font-semibold text-gray-400">198.8 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2022/09/grupo-uma-miniatura-torito-2025.webp" alt="Torito 4T" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Torito 4T Pasajeros</h3>
+            <p class="text-xs text-gray-500 mb-3">El vehículo de transporte de pasajeros más rentable y resistente.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$17.999.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Torito 4T')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- 15. Maxima Cargo -->
+        <div class="bike-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="motocarros">
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase bg-amber-50 text-amber-800">Carga Pesada</span>
+              <span class="text-xs font-semibold text-gray-400">236.2 cc</span>
+            </div>
+            <div class="bike-image-box h-48 flex items-center justify-center mb-4 bg-gray-50/70 rounded-xl p-3">
+              <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2022/09/grupo-uma-miniatura-maxima-cargo.webp" alt="Maxima Cargo" class="max-h-full w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Maxima Cargo</h3>
+            <p class="text-xs text-gray-500 mb-3">Platón reforzado con alta capacidad de carga para tu negocio.</p>
+            <div class="mb-4">
+              <span class="text-[11px] text-gray-400 uppercase font-semibold">Precio sugerido:</span>
+              <p class="font-heading text-xl font-extrabold text-uma-blue">$22.999.000</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0 flex gap-2">
+            <button onclick="openQuoteWithModel('Maxima Cargo')" class="flex-1 py-2.5 bg-uma-red hover:bg-uma-red-hover text-white text-xs font-bold rounded-xl transition-colors text-center">
+              Cotizar
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       BANNER INTERACTIVO: "TU MOTO IDEAL" (Test)
+       ======================================================================== -->
+  <section class="py-16 bg-gradient-to-r from-uma-blue-dark via-uma-blue to-uma-blue-light text-white relative overflow-hidden">
+    <div class="absolute right-0 top-0 bottom-0 w-1/2 opacity-10 bg-no-repeat bg-right bg-contain" style="background-image: url('https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/LOGO-GrupoUMA_2.webp');"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div class="max-w-xl">
+        <span class="inline-block px-3 py-1 rounded-md bg-uma-red text-white text-xs font-bold uppercase tracking-wider mb-3">
+          Asesor Virtual
+        </span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+          ¿Aún no sabes cuál elegir? Encuentra tu moto ideal
+        </h2>
+        <p class="text-blue-100 text-sm sm:text-base mt-3 leading-relaxed">
+          Responde 3 sencillas preguntas sobre tu presupuesto, uso y preferencias, y nuestro sistema te recomendará el modelo Bajaj perfecto para ti.
+        </p>
+        <div class="mt-6 flex items-center gap-4">
+          <button class="open-quiz-btn px-8 py-3.5 bg-white text-uma-blue hover:bg-gray-100 rounded-full font-heading text-sm font-bold uppercase tracking-wider transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-wand-magic-sparkles mr-2 text-uma-red"></i> Realizar Test Ahora
+          </button>
+        </div>
+      </div>
+
+      <div class="relative w-full max-w-md">
+        <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/grupo-uma-moto-ideal-2-1.webp" alt="Tu Moto Ideal" class="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECCIÓN: FINANCIA TU MOTO (CRÉDITO)
+       ======================================================================== -->
+  <section id="credito-section" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-gray-100 flex flex-col lg:flex-row items-center justify-between gap-10">
+        <div class="max-w-xl">
+          <span class="text-xs font-heading font-bold uppercase tracking-widest text-uma-red">financiación Fácil</span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">
+            ¡Haz realidad tu sueño de estrenar moto hoy!
+          </h2>
+          <p class="text-gray-600 text-sm sm:text-base mt-4 leading-relaxed">
+            En Bajaj Carrera Motos Medellín te conectamos con las mejores entidades financieras aliadas como ProgreSER, Sufi, Banco de Bogotá y Credivalores para que te lleves tu moto con cuotas cómodas y sin complicaciones.
+          </p>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-check-circle text-green-500 text-xl"></i>
+              <span class="text-xs sm:text-sm font-semibold text-gray-700">Aprobación en minutos</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-check-circle text-green-500 text-xl"></i>
+              <span class="text-xs sm:text-sm font-semibold text-gray-700">Sin experiencia crediticia</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-check-circle text-green-500 text-xl"></i>
+              <span class="text-xs sm:text-sm font-semibold text-gray-700">Tasas de interés especiales</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-check-circle text-green-500 text-xl"></i>
+              <span class="text-xs sm:text-sm font-semibold text-gray-700">Plazos de hasta 60 meses</span>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <button onclick="openQuoteWithModel('')" class="px-7 py-3.5 bg-uma-red hover:bg-uma-red-hover text-white rounded-full font-heading text-sm font-bold uppercase tracking-wider transition-all shadow-md">
+              Solicitar Estudio de Crédito
+            </button>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-96 bg-gray-50 rounded-2xl p-6 border border-gray-200">
+          <h4 class="font-heading font-bold text-gray-900 text-base mb-4 text-center">Simula tu cuota aproximada</h4>
+          <div class="space-y-3">
+            <div>
+              <label class="block text-xs font-semibold text-gray-600 mb-1">Valor de la moto</label>
+              <input type="text" value="$ 7.599.000" class="w-full px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg font-bold text-uma-blue text-center" readonly />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-600 mb-1">Cuota inicial (30%)</label>
+              <input type="text" value="$ 2.279.700" class="w-full px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg text-gray-700 text-center" readonly />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-600 mb-1">Plazo estimado</label>
+              <select class="w-full px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg text-gray-700">
+                <option>36 Meses (~ $225.000 / mes)</option>
+                <option>24 Meses (~ $310.000 / mes)</option>
+                <option>48 Meses (~ $185.000 / mes)</option>
+              </select>
+            </div>
+            <button onclick="openQuoteWithModel('')" class="w-full mt-2 py-3 bg-uma-blue hover:bg-uma-blue-dark text-white rounded-xl text-xs font-bold uppercase tracking-wider transition-all">
+              Preaprobar con un Asesor
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SERVICIOS Y BENEFICIOS UMA
+       ======================================================================== -->
+  <section id="servicios-section" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-heading font-bold uppercase tracking-widest text-uma-red">Más Respaldo, Más Soluciones</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Servicios y Beneficios UMA</h2>
+        <div class="w-16 h-1 bg-uma-blue mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Beneficio 1 -->
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 rounded-xl bg-blue-100 text-uma-blue flex items-center justify-center text-2xl mb-5 group-hover:bg-uma-blue group-hover:text-white transition-colors">
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Servicios UMA</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Servicio técnico especializado con mecánicos certificados por fábrica y herramienta de última tecnología.
+          </p>
+        </div>
+
+        <!-- Beneficio 2 -->
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 rounded-xl bg-red-100 text-uma-red flex items-center justify-center text-2xl mb-5 group-hover:bg-uma-red group-hover:text-white transition-colors">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Repuestos 100% Originales</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Piezas genuinas Bajaj con el ajuste perfecto, máxima durabilidad y garantía de fábrica para mantener tu moto como nueva.
+          </p>
+        </div>
+
+        <!-- Beneficio 3 -->
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 rounded-xl bg-green-100 text-green-700 flex items-center justify-center text-2xl mb-5 group-hover:bg-green-600 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Garantía Extendida</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            El mejor respaldo postventa para que ruedes tranquilo con amplia cobertura en revisiones y kilometraje.
+          </p>
+        </div>
+
+        <!-- Beneficio 4 -->
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-5 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-gray-900 mb-2">Compromiso Ambiental</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Programas ecológicos de gestión adecuada de aceites usados, baterías, llantas y reciclaje industrial en Colombia.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       BANNER PORTAL DISTRIBUIDORES B2B
+       ======================================================================== -->
+  <section id="distribuidores-section" class="py-12 bg-gray-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-5">
+        <div class="w-16 h-16 rounded-2xl bg-uma-red flex items-center justify-center text-2xl flex-shrink-0">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <div>
+          <span class="text-xs uppercase tracking-widest text-red-400 font-bold">Para Aliados y Distribuidores</span>
+          <h3 class="font-heading text-2xl font-bold text-white mt-0.5">Portal de Distribuidores B2B</h3>
+          <p class="text-xs text-gray-400 mt-1">Accede a pedidos de repuestos, gestión de garantías y capacitaciones oficiales.</p>
+        </div>
+      </div>
+
+      <a href="https://grupouma.com/colombia/distribuidores/" target="_blank" class="px-6 py-3 bg-uma-blue-light hover:bg-uma-blue text-white rounded-full font-heading text-xs font-bold uppercase tracking-wider transition-all shadow-md flex-shrink-0">
+        Ingresar al Portal B2B <i class="fa-solid fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ÚLTIMAS NOTICIAS Y BLOG UMA
+       ======================================================================== -->
+  <section id="noticias-section" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-heading font-bold uppercase tracking-widest text-uma-red">Entérate de Todo</span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Últimas Noticias UMA</h2>
+        </div>
+        <a href="#" class="text-xs font-heading font-bold uppercase tracking-wider text-uma-blue hover:text-uma-red flex items-center gap-1.5">
+          Ver todas las publicaciones <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Noticia 1 -->
+        <article class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all group flex flex-col">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2026/03/grupo-uma-banner-blog-pulsar-ns400-1024x683.webp" alt="Pulsar NS400Z" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-4 left-4 bg-uma-red text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase">Lanzamiento</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 text-xs text-gray-400 mb-2">
+                <span><i class="fa-regular fa-calendar mr-1"></i> Julio 2026</span>
+                <span>â€¢</span>
+                <span>Motos Bajaj</span>
+              </div>
+              <h3 class="font-heading text-lg font-bold text-gray-900 group-hover:text-uma-blue transition-colors mb-2 leading-snug">
+                Pulsar NS400Z en Colombia: 40 HP, tecnología avanzada y el mejor valor de 400cc
+              </h3>
+              <p class="text-xs text-gray-500 line-clamp-3 mb-4">
+                La nueva Pulsar NS400Z llega para redefinir el mercado de alta cilindrada con su potente motor monocilíndrico y paquete de ayudas electrónicas.
+              </p>
+            </div>
+            <a href="#" class="text-xs font-heading font-bold text-uma-red hover:underline flex items-center gap-1">
+              Leer artículo completo <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Noticia 2 -->
+        <article class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all group flex flex-col">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2026/03/grupo-uma-banner-blog-ns160.webp" alt="Pulsar NS160" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-4 left-4 bg-uma-blue text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase">tecnología</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 text-xs text-gray-400 mb-2">
+                <span><i class="fa-regular fa-calendar mr-1"></i> Junio 2026</span>
+                <span>â€¢</span>
+                <span>Seguridad</span>
+              </div>
+              <h3 class="font-heading text-lg font-bold text-gray-900 group-hover:text-uma-blue transition-colors mb-2 leading-snug">
+                Pulsar NS160 en Colombia: más potencia, ABS doble canal y conectividad
+              </h3>
+              <p class="text-xs text-gray-500 line-clamp-3 mb-4">
+                Descubre cómo la nueva generación de NS160 eleva los estándares de seguridad urbana con frenado antibloqueo y suspensión delantera invertida.
+              </p>
+            </div>
+            <a href="#" class="text-xs font-heading font-bold text-uma-red hover:underline flex items-center gap-1">
+              Leer artículo completo <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Noticia 3 -->
+        <article class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all group flex flex-col">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/07/grupouma-banner-pulsar-n160pro-after-1024x683.webp" alt="Pulsar N160 Pro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-4 left-4 bg-green-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase">Novedad</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 text-xs text-gray-400 mb-2">
+                <span><i class="fa-regular fa-calendar mr-1"></i> Mayo 2026</span>
+                <span>â€¢</span>
+                <span>Innovación</span>
+              </div>
+              <h3 class="font-heading text-lg font-bold text-gray-900 group-hover:text-uma-blue transition-colors mb-2 leading-snug">
+                La nueva Pulsar N160 Pro: máxima tecnología, iluminación LED y estilo naked
+              </h3>
+              <p class="text-xs text-gray-500 line-clamp-3 mb-4">
+                El Diseño vanguardista se une al rendimiento suave y eficiente del motor bicilíndrico con refrigeración por aceite.
+              </p>
+            </div>
+            <a href="#" class="text-xs font-heading font-bold text-uma-red hover:underline flex items-center gap-1">
+              Leer artículo completo <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER COMPLETO (Corporativo, Legales, Redes, Contacto)
+       ======================================================================== -->
+  <footer class="bg-uma-blue-dark text-white pt-16 pb-12 border-t border-blue-900/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Fila superior del footer con datos de contacto y dirección<div class="pb-12 border-b border-blue-900/60 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+        <div class="flex flex-wrap items-center gap-6">
+          <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2025/02/LOGO-GrupoUMA_2.webp" alt="Grupo UMA" class="h-10 w-auto brightness-0 invert" />
+          
+          <div class="border-l border-blue-800 pl-4">
+            <p class="text-xs text-blue-200 uppercase tracking-wider font-semibold">WhatsApp & Atención</p>
+            <a href="https://wa.me/573246600562?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20las%20motos%20en%20Bajaj%20Carrera%20Motos%20Medell%C3%ADn" target="_blank" class="text-xl font-heading font-extrabold text-white hover:text-green-400 transition-colors flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-green-400"></i>
+              <span>+57 324 660 0562</span>
+            </a>
+          </div>
+
+          <div class="border-l border-blue-800 pl-4">
+            <p class="text-xs text-blue-200 uppercase tracking-wider font-semibold">Correo Electrónico</p>
+            <a href="mailto:mercadeocarreramotoslaureles@gmail.com" class="text-xs sm:text-sm font-semibold text-white hover:text-red-400 transition-colors flex items-center gap-1.5 mt-0.5">
+              <i class="fa-solid fa-envelope text-uma-red"></i>
+              <span>mercadeocarreramotoslaureles@gmail.com</span>
+            </a>
+          </div>
+
+          <div class="border-l border-blue-800 pl-4">
+            <p class="text-xs text-blue-200 uppercase tracking-wider font-semibold">Dirección Sede Principal</p>
+            <a href="https://maps.google.com/?q=C.+50+%2367+58,+Laureles+-+Estadio,+Medell%C3%ADn,+Antioquia" target="_blank" class="text-xs sm:text-sm font-semibold text-white hover:text-red-400 transition-colors flex items-center gap-1.5 mt-0.5">
+              <i class="fa-solid fa-location-dot text-uma-red"></i>
+              <span>C. 50 #67 58, Laureles - Estadio, Medellín, Antioquia</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="flex items-center gap-4">
+          <span class="text-xs uppercase font-bold text-blue-300">Síguenos:</span>
+          <div class="flex gap-2">
+            <a href="https://facebook.com" target="_blank" class="w-9 h-9 rounded-full bg-blue-900/60 hover:bg-uma-red flex items-center justify-center text-sm transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-full bg-blue-900/60 hover:bg-uma-red flex items-center justify-center text-sm transition-all"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" class="w-9 h-9 rounded-full bg-blue-900/60 hover:bg-uma-red flex items-center justify-center text-sm transition-all"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://tiktok.com" target="_blank" class="w-9 h-9 rounded-full bg-blue-900/60 hover:bg-uma-red flex items-center justify-center text-sm transition-all"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columnas del Footer -->
+      <div class="py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-xs">
+        
+        <!-- Columna 1: Empresa -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider mb-4 border-b border-uma-red/60 pb-2 inline-block">EMPRESA</h4>
+          <ul class="space-y-2.5 text-blue-200">
+            <li><a href="#" class="hover:text-white transition-colors font-bold text-white">Bajaj Carrera Motos Medellín</a></li>
+            <li><a href="https://maps.google.com/?q=C.+50+%2367+58,+Laureles+-+Estadio,+Medell%C3%ADn,+Antioquia" target="_blank" class="hover:text-white transition-colors flex items-start gap-1"><i class="fa-solid fa-location-dot text-uma-red mt-0.5"></i> <span>C. 50 #67 58, Medellín</span></a></li>
+            <li><a href="https://wa.me/573246600562" target="_blank" class="hover:text-green-400 transition-colors flex items-center gap-1.5"><i class="fa-brands fa-whatsapp text-green-400"></i> <span>+57 324 660 0562</span></a></li>
+            <li><a href="mailto:mercadeocarreramotoslaureles@gmail.com" class="hover:text-white transition-colors flex items-center gap-1.5 truncate"><i class="fa-solid fa-envelope text-uma-red"></i> <span class="truncate">Contacto por Correo</span></a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Trabaja con nosotros</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Preguntas frecuentes</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Compromiso Ambiental</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Movemos Colombia</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Línea Ética</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 2: Legales -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider mb-4 border-b border-uma-red/60 pb-2 inline-block">LEGALES</h4>
+          <ul class="space-y-2.5 text-blue-200">
+            <li><a href="#" class="hover:text-white transition-colors">Aviso de privacidad</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Política de Datos Personales</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Términos y condiciones</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Campaña de Seguridad</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Radicación PQRS</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Supertransporte</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Marcas UMA -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider mb-4 border-b border-uma-red/60 pb-2 inline-block">MARCAS UMA</h4>
+          <ul class="space-y-2.5 text-blue-200">
+            <li><a href="#catalogo-motos" data-filter-trigger="boxer" class="hover:text-white transition-colors">Motos Boxer</a></li>
+            <li><a href="#catalogo-motos" data-filter-trigger="pulsar" class="hover:text-white transition-colors">Motos Pulsar</a></li>
+            <li><a href="#catalogo-motos" data-filter-trigger="discover" class="hover:text-white transition-colors">Motos Discover</a></li>
+            <li><a href="#catalogo-motos" data-filter-trigger="dominar" class="hover:text-white transition-colors">Motos Dominar</a></li>
+            <li><a href="#catalogo-motos" data-filter-trigger="motocarros" class="hover:text-white transition-colors">Torito 4T</a></li>
+            <li><a href="#catalogo-motos" data-filter-trigger="motocarros" class="hover:text-white transition-colors">Maxima Cargo</a></li>
+            <li><a href="https://triumphcolombia.com" target="_blank" class="hover:text-white transition-colors">Triumph Motorcycles</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Newsletter -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider mb-4 border-b border-uma-red/60 pb-2 inline-block">NOVEDADES</h4>
+          <p class="text-blue-200 mb-3 text-xs">Recibe antes que nadie promociones exclusivas, bonos y nuevos lanzamientos.</p>
+          <form class="space-y-2" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte al boletín de Grupo UMA Colombia!'); this.reset();">
+            <input type="email" placeholder="Tu correo Electrónico" required class="w-full px-3.5 py-2.5 bg-blue-950/80 border border-blue-800 rounded-xl text-white placeholder-blue-300 text-xs focus:outline-none focus:border-uma-red" />
+            <button type="submit" class="w-full py-2.5 bg-uma-red hover:bg-uma-red-hover text-white rounded-xl font-heading text-xs font-bold uppercase tracking-wider transition-all">
+              Suscribirme
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Copyright & SuperTransporte Disclaimers -->
+      <div class="pt-8 border-t border-blue-900/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-blue-300">
+        <p>© 2026 Grupo UMA Colombia. Todos los derechos reservados. Distribuidor exclusivo de Bajaj Auto Ltd.</p>
+        <p>Precios sugeridos de venta al público en Colombia. No incluyen gastos de matrícula ni SOAT.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL DE COTIZACIÓN (Captura de Leads)
+       ======================================================================== -->
+  <div id="quote-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+    <div class="modal-content bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-gray-100 relative max-h-[90vh] overflow-y-auto">
+      <button class="close-quote-btn absolute top-5 right-5 text-gray-400 hover:text-gray-700 text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="mb-6">
+        <span class="text-[11px] font-heading font-bold uppercase tracking-widest text-uma-red">Cotización Oficial</span>
+        <h3 class="font-heading text-2xl font-bold text-gray-900 mt-1">Cotiza tu motocicleta</h3>
+        <p class="text-xs text-gray-500 mt-1">Déjanos tus datos y un asesor oficial de Grupo UMA te contactará con la mejor oferta y opciones de crédito.</p>
+      </div>
+
+      <!-- Formulario de Cotización -->
+      <form id="quote-form" class="space-y-3.5">
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Modelo de Interés *</label>
+          <select id="quote-model-select" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-300 rounded-xl text-sm font-semibold text-gray-800 focus:outline-none focus:border-uma-blue">
+            <option value="Pulsar NS400Z">Pulsar NS400Z ($18.299.000)</option>
+            <option value="Boxer CT100 KS">Boxer CT100 KS ($5.899.000)</option>
+            <option value="Boxer CT100 KS Racing">Boxer CT100 KS Racing ($5.999.000)</option>
+            <option value="Boxer CT100 ES">Boxer CT100 ES ($6.199.000)</option>
+            <option value="Boxer CT125 Sport">Boxer CT125 Sport ($6.899.000)</option>
+            <option value="Boxer 150X">Boxer 150X ($7.499.000)</option>
+            <option value="Pulsar N125">Pulsar N125 ($7.599.000)</option>
+            <option value="Pulsar NS125 FI">Pulsar NS125 FI ($8.099.000)</option>
+            <option value="Pulsar N160 Pro">Pulsar N160 Pro ($10.999.000)</option>
+            <option value="Pulsar NS200 FI ABS">Pulsar NS200 FI ABS ($15.799.000)</option>
+            <option value="Discover 125 SPORT">Discover 125 SPORT ($6.999.000)</option>
+            <option value="Dominar 250">Dominar 250 ($15.799.000)</option>
+            <option value="Dominar 400 Touring">Dominar 400 Touring ($19.399.000)</option>
+            <option value="Torito 4T">Torito 4T Pasajeros ($17.999.000)</option>
+            <option value="Maxima Cargo">Maxima Cargo ($22.999.000)</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Nombre Completo *</label>
+            <input type="text" id="quote-name" required placeholder="Ej: Carlos Gómez" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-300 rounded-xl text-sm focus:outline-none focus:border-uma-blue" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Teléfono Móvil *</label>
+            <input type="tel" id="quote-phone" required placeholder="Ej: 310 123 4567" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-300 rounded-xl text-sm focus:outline-none focus:border-uma-blue" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Correo Electrónico *</label>
+            <input type="email" id="quote-email" required placeholder="carlos@correo.com" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-300 rounded-xl text-sm focus:outline-none focus:border-uma-blue" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Ciudad de Residencia *</label>
+            <input type="text" id="quote-city" required placeholder="Ej: Medellín / Bogotá" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-300 rounded-xl text-sm focus:outline-none focus:border-uma-blue" />
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <label class="flex items-start gap-2 text-xs text-gray-500 cursor-pointer">
+            <input type="checkbox" required class="mt-0.5 rounded text-uma-blue focus:ring-uma-blue" checked />
+            <span>Acepto la <a href="#" class="text-uma-blue underline">Política de Tratamiento de Datos Personales</a> de Bajaj Carrera Motos Medellín.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 bg-green-600 hover:bg-green-700 text-white rounded-xl font-heading text-xs font-bold uppercase tracking-wider transition-all shadow-md mt-2 flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Enviar Cotización por WhatsApp</span>
+        </button>
+      </form>
+
+      <!-- Mensaje de Éxito -->
+      <div id="quote-success" class="hidden text-center py-8">
+        <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h4 class="font-heading text-xl font-bold text-gray-900 mb-2">¡Solicitud enviada a WhatsApp!</h4>
+        <p class="text-xs text-gray-500 leading-relaxed">
+          Se ha abierto la ventana de WhatsApp con tu Cotización. Un asesor comercial de Bajaj Carrera Motos Medellín responderá tu mensaje de inmediato.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: TEST "TU MOTO IDEAL" (Interactivo por Pasos)
+       ======================================================================== -->
+  <div id="quiz-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+    <div class="modal-content bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-gray-100 relative">
+      <button class="close-quiz-btn absolute top-5 right-5 text-gray-400 hover:text-gray-700 text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Paso 1: Presupuesto -->
+      <div id="quiz-step-1" class="space-y-5">
+        <div class="text-center">
+          <span class="text-[11px] font-heading font-bold uppercase tracking-widest text-uma-red">Paso 1 de 3</span>
+          <h3 class="font-heading text-2xl font-bold text-gray-900 mt-1">¿Cuál es tu rango de presupuesto?</h3>
+          <p class="text-xs text-gray-500 mt-1">Selecciona el valor que se ajusta a tu plan de inversión.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-2.5">
+          <button class="quiz-budget-btn p-4 rounded-xl border border-gray-200 hover:border-uma-blue hover:bg-blue-50 text-left transition-all flex items-center justify-between" data-budget="low">
+            <span class="font-heading font-bold text-xs text-gray-800">Menos de $7.000.000 COP</span>
+            <i class="fa-solid fa-arrow-right text-uma-blue text-xs"></i>
+          </button>
+          <button class="quiz-budget-btn p-4 rounded-xl border border-gray-200 hover:border-uma-blue hover:bg-blue-50 text-left transition-all flex items-center justify-between" data-budget="mid-low">
+            <span class="font-heading font-bold text-xs text-gray-800">$7.000.000 a $10.000.000 COP</span>
+            <i class="fa-solid fa-arrow-right text-uma-blue text-xs"></i>
+          </button>
+          <button class="quiz-budget-btn p-4 rounded-xl border border-gray-200 hover:border-uma-blue hover:bg-blue-50 text-left transition-all flex items-center justify-between" data-budget="mid">
+            <span class="font-heading font-bold text-xs text-gray-800">$10.000.000 a $16.000.000 COP</span>
+            <i class="fa-solid fa-arrow-right text-uma-blue text-xs"></i>
+          </button>
+          <button class="quiz-budget-btn p-4 rounded-xl border border-gray-200 hover:border-uma-blue hover:bg-blue-50 text-left transition-all flex items-center justify-between" data-budget="high">
+            <span class="font-heading font-bold text-xs text-gray-800">Más de $16.000.000 COP</span>
+            <i class="fa-solid fa-arrow-right text-uma-blue text-xs"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Paso 2: Tipo de Uso -->
+      <div id="quiz-step-2" class="space-y-5 hidden">
+        <div class="text-center">
+          <span class="text-[11px] font-heading font-bold uppercase tracking-widest text-uma-red">Paso 2 de 3</span>
+          <h3 class="font-heading text-2xl font-bold text-gray-900 mt-1">¿Para qué usarás principalmente la moto?</h3>
+          <p class="text-xs text-gray-500 mt-1">Esto nos ayuda a priorizar consumo, potencia o confort.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-2.5">
+          <button class="quiz-usage-btn p-4 rounded-xl border border-gray-200 hover:border-uma-blue hover:bg-blue-50 text-left transition-all flex items-center justify-between" data-usage="work">
+            <div>
+              <p class="font-heading font-bold text-xs text-gray-800">Trabajo diario y mensajería</p>
+              <p class="text-[11px] text-gray-400">Máximo rendimiento de gasolina y resistencia.</p>
+            </div>
+            <i class="fa-solid fa-briefcase text-uma-blue text-sm"></i>
+          </button>
+          <button class="quiz-usage-btn p-4 rounded-xl border border-gray-200 hover:border-uma-blue hover:bg-blue-50 text-left transition-all flex items-center justify-between" data-usage="city">
+            <div>
+              <p class="font-heading font-bold text-xs text-gray-800">Transporte personal en ciudad</p>
+              <p class="text-[11px] text-gray-400">Agilidad en tráfico y estilo moderno.</p>
+            </div>
+            <i class="fa-solid fa-city text-uma-blue text-sm"></i>
+          </button>
+          <button class="quiz-usage-btn p-4 rounded-xl border border-gray-200 hover:border-uma-blue hover:bg-blue-50 text-left transition-all flex items-center justify-between" data-usage="sport">
+            <div>
+              <p class="font-heading font-bold text-xs text-gray-800">Deportiva y pura aceleración</p>
+              <p class="text-[11px] text-gray-400">Adrenalina, curvas y frenos ABS.</p>
+            </div>
+            <i class="fa-solid fa-gauge-high text-uma-blue text-sm"></i>
+          </button>
+          <button class="quiz-usage-btn p-4 rounded-xl border border-gray-200 hover:border-uma-blue hover:bg-blue-50 text-left transition-all flex items-center justify-between" data-usage="touring">
+            <div>
+              <p class="font-heading font-bold text-xs text-gray-800">Viajes largos y carreteras</p>
+              <p class="text-[11px] text-gray-400">Comodidad touring, cúpula y potencia.</p>
+            </div>
+            <i class="fa-solid fa-route text-uma-blue text-sm"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Paso 3: Experiencia -->
+      <div id="quiz-step-3" class="space-y-5 hidden">
+        <div class="text-center">
+          <span class="text-[11px] font-heading font-bold uppercase tracking-widest text-uma-red">Paso 3 de 3</span>
+          <h3 class="font-heading text-2xl font-bold text-gray-900 mt-1">¿Qué cilindrada prefieres?</h3>
+          <p class="text-xs text-gray-500 mt-1">Selecciona el nivel que te hace sentir más cómodo.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-2.5">
+          <button class="quiz-level-btn p-4 rounded-xl border border-gray-200 hover:border-uma-blue hover:bg-blue-50 text-left transition-all" data-level="100-125">
+            <span class="font-heading font-bold text-xs text-gray-800">100cc a 125cc (Fácil de maniobrar y económica)</span>
+          </button>
+          <button class="quiz-level-btn p-4 rounded-xl border border-gray-200 hover:border-uma-blue hover:bg-blue-50 text-left transition-all" data-level="150-200">
+            <span class="font-heading font-bold text-xs text-gray-800">150cc a 200cc (Equilibrio perfecto entre potencia y peso)</span>
+          </button>
+          <button class="quiz-level-btn p-4 rounded-xl border border-gray-200 hover:border-uma-blue hover:bg-blue-50 text-left transition-all" data-level="250-400">
+            <span class="font-heading font-bold text-xs text-gray-800">250cc a 400cc (Alta potencia y velocidad de crucero)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Paso Resultado -->
+      <div id="quiz-step-result" class="text-center space-y-4 hidden">
+        <span class="text-[11px] font-heading font-bold uppercase tracking-widest text-green-600 bg-green-50 px-3 py-1 rounded-full">
+          ¡Tu coincidencia perfecta!
+        </span>
+        
+        <div class="h-44 flex items-center justify-center bg-gray-50 rounded-2xl p-4">
+          <img id="quiz-result-img" src="" alt="Moto recomendada" class="max-h-full w-auto object-contain" />
+        </div>
+
+        <div>
+          <h3 id="quiz-result-title" class="font-heading text-2xl font-extrabold text-gray-900">Pulsar NS400Z</h3>
+          <p id="quiz-result-specs" class="text-xs text-gray-500 font-semibold mt-0.5">373.3 cc â€¢ 40 HP</p>
+          <p id="quiz-result-price" class="font-heading text-xl font-extrabold text-uma-red mt-2">$18.299.000</p>
+          <p id="quiz-result-desc" class="text-xs text-gray-600 mt-2 px-4 leading-relaxed">
+            Descripción del modelo ajustado a tu preferencia.
+          </p>
+        </div>
+
+        <div class="pt-2 flex gap-2">
+          <button id="quiz-result-quote-btn" class="flex-1 py-3.5 bg-uma-red hover:bg-uma-red-hover text-white rounded-xl font-heading text-xs font-bold uppercase tracking-wider transition-all shadow-md">
+            Cotizar Esta Moto
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+       ======================================================================== -->
+  <a href="https://wa.me/573246600562?text=Hola,%20quiero%20cotizar%20una%20moto%20en%20Bajaj%20Carrera%20Motos%20Medell%C3%ADn" target="_blank" class="whatsapp-float" title="Habla con un Asesor UMA">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ========================================================================
+       BANNER DE CONSENTIMIENTO DE COOKIES
+       ======================================================================== -->
+  <div id="cookie-banner" class="fixed bottom-4 left-4 right-4 sm:right-auto sm:max-w-md bg-white border border-gray-200 rounded-2xl shadow-2xl p-5 z-50 hidden animate-fadeIn">
+    <div class="flex items-start gap-3">
+      <i class="fa-solid fa-cookie-bite text-uma-red text-2xl mt-0.5"></i>
+      <div>
+        <h5 class="font-heading font-bold text-xs text-gray-900">Aviso de Cookies</h5>
+        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">
+          Utilizamos cookies propias y de terceros para optimizar tu experiencia y brindarte ofertas personalizadas según nuestra Política de privacidad.
+        </p>
+        <div class="mt-3 flex gap-2">
+          <button id="accept-cookies-btn" class="px-4 py-1.5 bg-uma-blue hover:bg-uma-blue-dark text-white rounded-lg text-xs font-bold">
+            Aceptar
+          </button>
+          <a href="#" class="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-xs font-semibold">
+            Políticas
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
